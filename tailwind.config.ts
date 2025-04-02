@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for Heilkunst-KI-Kompass
+				heilkunst: {
+					'green-light': '#A1CCA5',
+					'green': '#6E9B72',
+					'green-dark': '#3F6844',
+					'purple-light': '#E5DEFF',
+					'purple': '#9B87F5',
+					'purple-dark': '#7E69AB',
+					'beige': '#F2E9E4',
+					'brown': '#8B7569',
+					'gray': '#5A5A5A'
 				}
 			},
 			borderRadius: {
@@ -84,11 +97,19 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'herb-pattern': "url('/images/herbs-bg.svg')"
 			}
 		}
 	},
